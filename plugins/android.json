@@ -1,0 +1,35 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "res/xml/config.xml": {
+            "/*": {
+                "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>": 1,
+                "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>": 1,
+                "<feature name=\"Media\"><param name=\"android-package\" value=\"org.apache.cordova.media.AudioHandler\" /></feature>": 1
+            }
+        },
+        "AndroidManifest.xml": {
+            "/*": {
+                "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />": 2,
+                "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />": 1,
+                "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\" />": 1,
+                "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />": 1
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.jsmobile.soundrecorder"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.jsmobile.soundrecorder"
+        },
+        "org.apache.cordova.media": {
+            "PACKAGE_NAME": "com.jsmobile.soundrecorder"
+        }
+    },
+    "dependent_plugins": {}
+}

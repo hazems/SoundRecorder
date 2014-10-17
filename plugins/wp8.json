@@ -1,0 +1,35 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "config.xml": {
+            "/*": {
+                "<feature name=\"Device\"><param name=\"wp-package\" value=\"Device\" /></feature>": 1,
+                "<feature name=\"File\"><param name=\"wp-package\" value=\"File\" /></feature>": 1,
+                "<feature name=\"Media\"><param name=\"wp-package\" value=\"Media\" /></feature>": 1
+            }
+        },
+        "Properties/WMAppManifest.xml": {
+            "/Deployment/App/Capabilities": {
+                "<Capability Name=\"ID_CAP_IDENTITY_DEVICE\" />": 1,
+                "<Capability Name=\"ID_CAP_MEDIALIB_AUDIO\" />": 1,
+                "<Capability Name=\"ID_CAP_MEDIALIB_PLAYBACK\" />": 1,
+                "<Capability Name=\"ID_CAP_MICROPHONE\" />": 1
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "{8BED53E3-01A3-449F-8459-8401327A584B}"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "{8BED53E3-01A3-449F-8459-8401327A584B}"
+        },
+        "org.apache.cordova.media": {
+            "PACKAGE_NAME": "{8BED53E3-01A3-449F-8459-8401327A584B}"
+        }
+    },
+    "dependent_plugins": {}
+}

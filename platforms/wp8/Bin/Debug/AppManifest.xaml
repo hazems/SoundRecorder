@@ -1,0 +1,5 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="com.jsmobile.soundrecorder" EntryPointType="com.jsmobile.soundrecorder.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="com.jsmobile.soundrecorder" Source="com.jsmobile.soundrecorder.dll" />
+  </Deployment.Parts>
+</Deployment>
